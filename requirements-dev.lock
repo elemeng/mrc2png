@@ -9,13 +9,25 @@
 #   generate-hashes: false
 
 -e file:.
+altgraph==0.17.4
+    # via pyinstaller
 mrcfile==1.5.0
     # via mrc2png
 numpy==1.26.4
     # via mrc2png
     # via mrcfile
     # via tifffile
+packaging==24.0
+    # via pyinstaller
+    # via pyinstaller-hooks-contrib
 pillow==10.3.0
     # via mrc2png
+pyinstaller==6.7.0
+    # via mrc2png
+pyinstaller-hooks-contrib==2024.6
+    # via pyinstaller
+setuptools==70.0.0
+    # via pyinstaller
+    # via pyinstaller-hooks-contrib
 tifffile==2024.5.10
     # via mrc2png
