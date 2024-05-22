@@ -54,6 +54,8 @@ python mrc_converter.py <root_dir> [options]
 Replace <root_dir> with the path to the root directory containing the MRC files.
 
 Options:
--r, --reverse: Reverse the order of frames.
--s, --resolution <resolution>: Set the resolution of the output PNG. Available options: "Full", "1920x1080", "1280x720", "640x480". Default: "Full".
--p, --pattern <pattern>: Specify a wildcard pattern for MRC files. Default: "*.mrc". eg: -p *preview.mrc will only convert mrc file whose name endswith preview.mrc.
+### -r, --reverse: Reverse the order of frames.
+
+### -s, --resolution <resolution>: Set the resolution of the output PNG. Available options: "Full", "1920x1080", "1280x720", "640x480". Default: "Full".
+
+### -p, --pattern <pattern>: Specify a wildcard pattern for MRC files. Default: "*.mrc". eg: -p *preview.mrc will only convert mrc file whose name endswith preview.mrc.
