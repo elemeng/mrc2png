@@ -26,7 +26,7 @@ This script converts MRC (Microscopy Data) files to PNG format. MRC files are co
 2. Navigate to the repository directory:
 
     ```bash
-    cd mrc-to-png-converter
+    cd mrc2png
     ```
 
 3. Install the required packages:
