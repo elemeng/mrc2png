@@ -79,6 +79,4 @@ This script converts MRC (Microscopy Data) files to PNG format. MRC files are co
 
 5. Start coding!
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
