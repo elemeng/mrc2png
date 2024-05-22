@@ -15,6 +15,21 @@ This script converts MRC (Microscopy Data) files to PNG format. MRC files are co
 - Python 3.6+
 - Required Python packages: `numpy`, `mrcfile`, `tifffile`, `Pillow`
 
+## Usage 
+1. Download the compiled excutable file
+2. In a terminal, excute "./mrc2png <root_dir> [options]"
+
+Replace <root_dir> with the path to the root directory containing the MRC files.
+
+Options:
+- -r, --reverse: Reverse the order of frames.  
+
+- -s, --resolution <resolution>: Set the resolution of the output PNG. Available options: "Full", "1920x1080", "1280x720", "640x480". Default: "Full".  
+
+- -p, --pattern <pattern>: Specify a wildcard pattern for MRC files. Default: "*.mrc". eg: -p *preview.mrc will only convert mrc file whose name endswith preview.mrc.  
+
+# For customization
+
 ## Installation
 
 1. Clone the repository:
@@ -48,14 +63,14 @@ This script converts MRC (Microscopy Data) files to PNG format. MRC files are co
 Run the script from the command line with the following command:
 
 ```bash
-python mrc_converter.py <root_dir> [options]
+python mrc2png.py <root_dir> [options]
 ```
 
 Replace <root_dir> with the path to the root directory containing the MRC files.
 
 Options:
-### -r, --reverse: Reverse the order of frames.
+- -r, --reverse: Reverse the order of frames.  
 
-### -s, --resolution <resolution>: Set the resolution of the output PNG. Available options: "Full", "1920x1080", "1280x720", "640x480". Default: "Full".
+- -s, --resolution <resolution>: Set the resolution of the output PNG. Available options: "Full", "1920x1080", "1280x720", "640x480". Default: "Full".  
 
-### -p, --pattern <pattern>: Specify a wildcard pattern for MRC files. Default: "*.mrc". eg: -p *preview.mrc will only convert mrc file whose name endswith preview.mrc.
+- -p, --pattern <pattern>: Specify a wildcard pattern for MRC files. Default: "*.mrc". eg: -p *preview.mrc will only convert mrc file whose name endswith preview.mrc.  
