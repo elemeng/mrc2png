@@ -29,13 +29,17 @@ This script converts MRC (Microscopy Data) files to PNG format. MRC files are co
     cd mrc2png
     ```
 
-3. Install the required packages:
+3. Install the rye package manager:
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+    Linux and macOS:
 
-    or use rye as your project manager:
+    curl -sSf https://rye-up.com/get | bash
+    
+    Windows:
+
+    Download and run the installer (64bit Intel/AMD: https://github.com/astral-sh/rye/releases/latest/download/rye-x86_64-windows.exe).
+4. Install dependencies
+
     ```bash
     rye sync
     ```
@@ -45,3 +49,11 @@ Run the script from the command line with the following command:
 
 ```bash
 python mrc_converter.py <root_dir> [options]
+```
+
+Replace <root_dir> with the path to the root directory containing the MRC files.
+
+Options:
+-r, --reverse: Reverse the order of frames.
+-s, --resolution <resolution>: Set the resolution of the output PNG. Available options: "Full", "1920x1080", "1280x720", "640x480". Default: "Full".
+-p, --pattern <pattern>: Specify a wildcard pattern for MRC files. Default: "*.mrc". eg: -p *preview.mrc will only convert mrc file whose name endswith preview.mrc.
