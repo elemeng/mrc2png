@@ -20,7 +20,7 @@ This script converts MRC (Microscopy Data) files to PNG format. MRC files are co
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/mrc-to-png-converter.git
+    git clone https://github.com/elemeng/mrc2png.git
     ```
 
 2. Navigate to the repository directory:
@@ -35,6 +35,10 @@ This script converts MRC (Microscopy Data) files to PNG format. MRC files are co
     pip install -r requirements.txt
     ```
 
+    or use rye as your project manager:
+    ```bash
+    rye sync
+    ```
 ## Usage
 
 Run the script from the command line with the following command:
