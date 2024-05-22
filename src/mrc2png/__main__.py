@@ -1,4 +1,4 @@
-import mrc2png.mrc2png
+import mrc2png.mrc
 import sys
 
 

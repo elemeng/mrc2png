@@ -1,4 +1,4 @@
-from mrc2png.mrc2png import MRCConverterCLI
+from mrc2png.mrc import MRCConverterCLI
 
 
 def main():
