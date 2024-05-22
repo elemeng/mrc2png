@@ -1,0 +1,29 @@
+[project]
+name = "mrc2png"
+version = "0.1.0"
+description = "Add your description here"
+dependencies = [
+    "mrcfile>=1.5.0",
+    "numpy>=1.26.4",
+    "tifffile>=2024.5.10",
+    "pillow>=10.3.0",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.scripts]
+"mrc2png" = "mrc2png:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mrc2png"]
